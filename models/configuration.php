@@ -15,10 +15,10 @@ class Configuration extends ConfigurationAppModel {
           )
       );
    
-  function load(){
+  function load($prefix = 'CFG'){
     $settings = $this->find('all');
     foreach ($settings as $variable){
-      Configure::write("CFG.{$variable['Configuration']['name']}",$variable['Configuration']['value']);
+      Configure::write("$prefix.{$variable['Configuration']['name']}",$variable['Configuration']['value']);
     }
   }
 }

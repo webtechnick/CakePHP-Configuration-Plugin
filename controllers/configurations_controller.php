@@ -3,10 +3,6 @@ class ConfigurationsController extends ConfigurationAppController {
 
 	var $name = 'Configurations';
 	var $helpers = array('Html', 'Form');
-  
-  function beforeFilter(){
-    $this->Auth->allow('*'); //DO NOT COMMIT
-  }
 
 	function admin_index() {
 		$this->Configuration->recursive = 0;
