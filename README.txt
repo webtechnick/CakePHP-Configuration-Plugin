@@ -1,16 +1,24 @@
 Configuration Plugin
 Version: 1.1
 Author: Nick Baker
+Email: nick@webtechnick.com
+Website: http://www.webtechnick.com
+Updates: http://www.webtechnick.com/blogs/view/223/CakePHP_Configuration_Plugin
+
+SVN: svn co http://svn.xp-dev.com/svn/configuration-plugin configuration
+BROWSE: http://projects.webtechnick.com/configuration
 
 
 The Configuration plugin is an extremely useful way to store site-wide configuration.  The configuration plugin stores
 your configuration into your database and is made available throughout your site (views, controllers, models, tasks, etc...)
 
-Install:
+
+========================= Install ========================= 
 1) Copy the /configuration folder into /app/plugins/
 2) run "cake schema run -path /plugins/configuration/config/sql -name config" in a terminal to build your database.
 
-Setup:
+
+========================= Setup =========================
 1) Open up your app_controller.php file and add:
 
   var $users = array('Configuration.Configuration');
@@ -24,13 +32,13 @@ Setup:
 3) Start adding configurations.
 
 
-Usage:
+========================= Usage =========================
   Whatever name/value pair you save in your configuration database, you'll have access to anywhere in your site via
   
   Configure::read('[prefix].[name]'); //returns 'value';
   
   
-Example:
+========================= Example =========================
 
   Say I have a configuration table like so:
   
