@@ -1,12 +1,17 @@
 Configuration Plugin
+======================
 Version: 1.1
 Author: Nick Baker
 Email: nick@webtechnick.com
 Website: http://www.webtechnick.com
 Updates: http://www.webtechnick.com/blogs/view/223/CakePHP_Configuration_Plugin
 
-SVN: svn co http://svn.xp-dev.com/svn/configuration-plugin configuration
-BROWSE: http://projects.webtechnick.com/configuration
+
+Get it
+======================
+Download: http://projects.webtechnick.com/configuration.tar.gz
+SVN: http://svn.github.com/webtechnick/CakePHP-Configuration-Plugin
+GIT: git@github.com:webtechnick/CakePHP-Configuration-Plugin.git
 
 
 The Configuration plugin is an extremely useful way to store site-wide configuration.  The configuration plugin stores
