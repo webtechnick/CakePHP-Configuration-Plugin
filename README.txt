@@ -26,7 +26,7 @@ your configuration into your database and is made available throughout your site
 ========================= Setup =========================
 1) Open up your app_controller.php file and add:
 
-  var $users = array('Configuration.Configuration');
+  var $uses = array('Configuration.Configuration');
   
   function beforeFilter(){
     //Load Configurations
