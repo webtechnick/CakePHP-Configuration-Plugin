@@ -21,5 +21,23 @@ class Configuration extends ConfigurationAppModel {
       Configure::write("$prefix.{$variable['Configuration']['name']}",$variable['Configuration']['value']);
     }
   }
+  
+  /**
+  * Save a configuration
+  */
+  function saveConfig($key, $value){
+  	$result = $this->find('first', array(
+  		'conditions' => array('Configuration.name' => $key)
+  	));
+  	if(!empty($result)){
+  		$this->id = $result['Configuration']['id'];
+  		return $this->saveField('value', $value);
+  	} else {
+  		return $this->save(array(
+  			'name' => $key,
+  			'value' => $value
+  		));
+  	}
+  }
 }
 ?>
