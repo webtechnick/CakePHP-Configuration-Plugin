@@ -1,5 +1,5 @@
 {
-    "name": "webtechnick/CakePHP-Configuration-Plugin",
+    "name": "webtechnick/configuration",
     "type": "cakephp-plugin",
     "description": "The Configuration plugin is an extremely useful way to store site-wide configuration.",
     "keywords": [
