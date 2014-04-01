@@ -4,7 +4,7 @@
     "description": "The Configuration plugin is an extremely useful way to store site-wide configuration.",
     "keywords": [
         "cakephp",
-        "configuration",
+        "configuration"
     ],
     "homepage": "http://www.webtechnick.com/blogs/view/223/CakePHP_Configuration_Plugin",
     "authors": [
