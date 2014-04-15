@@ -1,5 +1,5 @@
 <?php 
-class ConfigurationsSchema extends CakeSchema {
+class ConfigurationSchema extends CakeSchema {
 
 	public $renames = array();
 
