@@ -1,11 +1,11 @@
 <h1>Add Configuration</h1>
 <div class="configurations form">
-<?php echo $form->create('Configuration');?>
+<?php echo $this->Form->create('Configuration');?>
 	<fieldset>
 	<?php
-		echo $form->input('name');
-		echo $form->input('value');
+		echo $this->Form->input('name');
+		echo $this->Form->input('value');
 	?>
 	</fieldset>
-<?php echo $form->end('Submit');?>
+<?php echo $this->Form->end('Submit');?>
 </div>
