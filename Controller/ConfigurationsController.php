@@ -1,4 +1,6 @@
 <?php
+App::uses('ConfigurationAppController', 'Configuration.Controller');
+
 class ConfigurationsController extends ConfigurationAppController {
 
 	var $name = 'Configurations';
