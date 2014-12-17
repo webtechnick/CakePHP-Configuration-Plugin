@@ -30,7 +30,7 @@ class Configuration extends ConfigurationAppModel {
   	$result = $this->find('first', array(
   		'conditions' => array('Configuration.name' => $key)
   	));
-  	if(!empty($result)){
+  	if (!empty($result)) {
   		$this->id = $result['Configuration']['id'];
   		return $this->saveField('value', $value);
   	} else {
